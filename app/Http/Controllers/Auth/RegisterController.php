@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Carbon;
 use App\Jobs\SendWelcomeEmail;
+use Illuminate\Support\Facades\Mail;
 
 class RegisterController extends Controller
 {
@@ -70,8 +71,18 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        $job = (new SendWelcomeEmail($user))->delay(Carbon::now()->addMinutes(1));
-        //dd($job);
+        
+        // $email = 'kairu2607@gmail.com';
+        // $name = 'Nguyễn Tuấn';
+        // $messageBody = 'Chào bạn '.$name.' đã xác nhận mật khẩu thành công';
+
+        // Mail::html($messageBody, function ($message) use ($messageBody, $email) {
+        //     $message->to($email);
+        //     $message->subject('Mail xác nhận mật khẩu thành công');
+        //     $message->html($messageBody);
+        // });
+
+        $job = (new SendWelcomeEmail($user))->delay(Carbon::now()->addSeconds(5));
         dispatch($job);
         return $user;
     }

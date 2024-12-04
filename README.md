@@ -2,7 +2,7 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Lập trình web PHP & MySQL với Laravel Framework - Unicode : Xử lý hàng đợi với Laravel Queue (Bài 150 - Bài 153)
+## Lập trình web PHP & MySQL với Laravel Framework - Unicode : Xử lý hàng đợi với Laravel Queue + Làm việc với Task scheduler và Cronjob (Bài 150 - Bài 157)
 
 ### Mô tả
 

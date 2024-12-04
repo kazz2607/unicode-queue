@@ -4,6 +4,8 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class Kernel extends ConsoleKernel
 {
@@ -13,6 +15,15 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // $schedule->command('inspire')->hourly();
+        // $schedule->command('inspire')->everyMinute()->appendOutputTo('inspire.txt');
+        $schedule->call(function(){
+            $user = new User();
+            $user->name = 'Nguyễn Tuấn '.rand(1,100);
+            $user->email = 'email-'.rand(1,100).'@gmail.com';
+            $user->password = Hash::make('123456');
+            $user->created_at = date('Y-m-d H:i:s');
+            $user->save();
+        })->everyFiveSeconds();
     }
 
     /**

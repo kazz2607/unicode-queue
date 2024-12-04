@@ -34,7 +34,9 @@ class Kernel extends ConsoleKernel
 
         // $schedule->job(new SendWelcomeEmail)->everyMinute();
 
-        $schedule->command('queue:work')->everyMinute();
+        // $schedule->command('queue:work')->everyMinute();
+
+        $schedule->command('user:create')->everyMinute();
     }
 
     /**

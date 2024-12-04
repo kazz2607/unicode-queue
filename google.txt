@@ -1,0 +1,30 @@
+PING google.com (142.250.197.78): 56 data bytes
+64 bytes from 142.250.197.78: icmp_seq=0 ttl=116 time=45.473 ms
+64 bytes from 142.250.197.78: icmp_seq=1 ttl=116 time=51.565 ms
+64 bytes from 142.250.197.78: icmp_seq=2 ttl=116 time=51.501 ms
+64 bytes from 142.250.197.78: icmp_seq=3 ttl=116 time=51.575 ms
+64 bytes from 142.250.197.78: icmp_seq=4 ttl=116 time=51.473 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 45.473/50.317/51.575/2.423 ms
+PING google.com (142.250.197.78): 56 data bytes
+64 bytes from 142.250.197.78: icmp_seq=0 ttl=116 time=50.348 ms
+64 bytes from 142.250.197.78: icmp_seq=1 ttl=116 time=50.985 ms
+64 bytes from 142.250.197.78: icmp_seq=2 ttl=116 time=50.230 ms
+64 bytes from 142.250.197.78: icmp_seq=3 ttl=116 time=50.064 ms
+64 bytes from 142.250.197.78: icmp_seq=4 ttl=116 time=57.930 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 50.064/51.911/57.930/3.025 ms
+PING google.com (142.250.197.78): 56 data bytes
+64 bytes from 142.250.197.78: icmp_seq=0 ttl=116 time=50.030 ms
+64 bytes from 142.250.197.78: icmp_seq=1 ttl=116 time=50.667 ms
+64 bytes from 142.250.197.78: icmp_seq=2 ttl=116 time=50.646 ms
+64 bytes from 142.250.197.78: icmp_seq=3 ttl=116 time=50.374 ms
+64 bytes from 142.250.197.78: icmp_seq=4 ttl=116 time=50.324 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 50.030/50.408/50.667/0.234 ms
